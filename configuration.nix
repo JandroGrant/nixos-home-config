@@ -71,19 +71,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # ROBLOX _
-
-  services.flatpak.enable = true;
-  systemd.services.flatpak-repo = {
-    wantedBy = ["multi-user.target"];
-    path = [pkgs.flatpak];
-    script = ''
-      flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo &&
-      flatpak install flathub org.vinegarhq.Sober
-    '';
-  };
-  # _
-
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -139,15 +126,15 @@
   programs.gamemode.enable = true;
   #__
 
+  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jandro = {
     isNormalUser = true;
     extraGroups = ["wheel" "storage"]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      flatpak
-      gnome-software
       pavucontrol
     ];
+    shell = pkgs.zsh;
   };
 
   nix.settings.allowed-users = ["@wheel" "jandro"];
