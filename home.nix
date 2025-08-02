@@ -101,7 +101,7 @@
 
   programs.ghostty = {
     enable = true;
-    enableBashIntegration = true;
+    enableZshIntegration = true;
     installVimSyntax = true;
 
     settings = {
@@ -112,7 +112,7 @@
 
   programs.starship = {
     enable = true;
-    enableBashIntegration = true;
+    enableZshIntegration = true;
   };
 
   programs.nvf = {
