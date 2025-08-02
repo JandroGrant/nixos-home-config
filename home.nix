@@ -106,9 +106,12 @@
 
     settings = {
       background-opacity = 0.75;
-      # theme = "Tomorrow Night Burns";
       theme = "Oxocarbon";
     };
+  };
+
+  programs.starship = {
+    enable = true;
   };
 
   programs.zsh = {
@@ -116,11 +119,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    enableZshIntegration = true;
+    initContent = ''eval "$(starship init zsh)"'';
   };
 
   programs.nvf = {
