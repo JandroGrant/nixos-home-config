@@ -42,6 +42,7 @@
     fastfetch
     cmatrix
     gtypist
+    starship
 
     # tools
     vlc
@@ -103,6 +104,12 @@
       background-opacity = 0.75;
       theme = "Oxocarbon";
     };
+  };
+
+  programs.bash = {
+    enable = true;
+    enableCompletion = true;
+    bashrcExtra = ''eval "(starship init bash)"'';
   };
 
   programs.starship = {
