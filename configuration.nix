@@ -44,25 +44,6 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  # services = {
-  #   xserver = {
-  #     enable = true;
-
-  #     windowManager.i3 = {
-  #       enable = true;
-  #       extraPackages = with pkgs; [
-  #         dmenu
-  #       ];
-  #     };
-  #   };
-
-  #   displayManager = {
-  #     sddm.enable = true;
-  #   };
-  # };
-
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -126,7 +107,6 @@
   programs.gamemode.enable = true;
   #__
 
-  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jandro = {
     isNormalUser = true;
@@ -134,7 +114,6 @@
     packages = with pkgs; [
       pavucontrol
     ];
-    shell = pkgs.zsh;
   };
 
   nix.settings.allowed-users = ["@wheel" "jandro"];
