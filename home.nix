@@ -144,7 +144,7 @@
 
   programs.nvf = {
     enable = true;
-    settings = ./neovim;
+    settings = ./nvf;
   };
 
   programs.spicetify = {
