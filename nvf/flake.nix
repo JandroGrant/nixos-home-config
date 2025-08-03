@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     nvf.url = "github:NotAShelf/nvf";
+    love2d = {
+      url = "github:S1M0N38/love2d.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -15,7 +19,7 @@
       neovimConfigured = inputs.nvf.lib.neovimConfiguration {
         inherit (nixpkgs.legacyPackages."x86_64-linux") pkgs;
         modules = [
-          ./default.nix
+          (import ./default.nix)
         ];
       };
     in {
