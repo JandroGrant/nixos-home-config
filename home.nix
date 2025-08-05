@@ -27,7 +27,6 @@
     hyprshot
     hyprpaper
     rofi
-    xfce.thunar
 
     # gaming
     discord
