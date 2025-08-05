@@ -23,6 +23,14 @@
         clang.enable = true;
       };
 
+      diagnostics = {
+        enable = true;
+        config = {
+          virtual_text = true;
+          update_in_insert = true;
+        };
+      };
+
       autocomplete.blink-cmp.enable = true;
       autopairs.nvim-autopairs.enable = true;
       binds.cheatsheet.enable = true;
@@ -82,6 +90,7 @@
         enable = true;
         fold = true;
         indent.enable = true;
+        highlight.enable = true;
       };
 
       ui = {
