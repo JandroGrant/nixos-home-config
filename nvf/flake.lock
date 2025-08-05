@@ -37,14 +37,14 @@
         "type": "github"
       }
     },
-    "love2d": {
+    "love2d-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1753226277,
-        "narHash": "sha256-NPd1nUm7nJGxAswxYPSiFSxKbPtnYkNZuCSOjWud0kE=",
+        "lastModified": 1754288651,
+        "narHash": "sha256-K1ZVmo5U2b2spjJTyLDYeXij0XIUjSYfAA5/W67PYu0=",
         "owner": "S1M0N38",
         "repo": "love2d.nvim",
-        "rev": "ad3f00ace4db7b50f5e7293afb7e8c91949742eb",
+        "rev": "25715394680590f56aab90390d430cab0dc46808",
         "type": "github"
       },
       "original": {
@@ -124,7 +124,7 @@
     },
     "root": {
       "inputs": {
-        "love2d": "love2d",
+        "love2d-nvim": "love2d-nvim",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf"
       }
