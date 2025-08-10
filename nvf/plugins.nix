@@ -104,6 +104,7 @@
       utility = {
         preview.markdownPreview.enable = true;
         motion.flash-nvim.enable = true;
+        yazi-nvim.enable = true;
       };
 
       visuals = {
