@@ -35,6 +35,7 @@
     sameboy
     nestopia-ue
     prismlauncher
+    grapejuice
 
     # terminal tools
     yazi
