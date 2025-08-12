@@ -29,6 +29,22 @@
   services.blueman.enable = true;
   services.udisks2.enable = true;
 
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      default = {
+        ids = ["*"];
+        settings = {
+          main = {
+            capslock = "escape";
+            escape = "capslock";
+          };
+          otherlayer = {};
+        };
+      };
+    };
+  };
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
