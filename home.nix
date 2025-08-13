@@ -37,7 +37,7 @@
     spotify-player
     sameboy
     nestopia-ue
-    prismlauncher
+    modrinth-app
 
     # terminal tools
     yazi
