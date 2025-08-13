@@ -37,7 +37,7 @@
     spotify-player
     sameboy
     nestopia-ue
-    modrinth-app
+    modrinth-app-unwrapped
 
     # terminal tools
     yazi
