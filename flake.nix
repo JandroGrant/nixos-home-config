@@ -9,13 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
     nvf = {
       url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    alejandra = {
-      url = "github:kamadorueda/alejandra/4.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -25,11 +22,10 @@
   outputs = {
     nixpkgs,
     home-manager,
-    alejandra,
     nvf,
     spicetify-nix,
     ...
-  }: let
+  } @ inputs: let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
 
@@ -43,13 +39,17 @@
     nixosConfigurations = {
       nixos-morningstar = lib.nixosSystem {
         inherit system;
-        modules = [./configuration.nix {environment.systemPackages = [alejandra.defaultPackage.${system}];}];
+        modules = [./configuration.nix];
       };
     };
 
     homeConfigurations = {
       jandro = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = {
+          inherit system;
+          inherit inputs;
+        };
         modules = [
           ./home.nix
           nvf.homeManagerModules.default

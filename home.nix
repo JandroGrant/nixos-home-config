@@ -2,6 +2,8 @@
   lib,
   config,
   pkgs,
+  system,
+  inputs,
   spicetify-nix,
   ...
 }: {
@@ -27,6 +29,7 @@
     hyprshot
     hyprpaper
     rofi
+    inputs.zen-browser.packages."${system}".default
 
     # gaming
     discord
