@@ -76,7 +76,7 @@
       # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
     ];
 
-    home.file = {
+    file = {
       # HYPRLAND
       ".local/share/icons/miku-cursor-linux/".source = ./jandro/.local/share/icons/miku-cursor-linux;
       ".config/hypr/".source = ./jandro/.config/hypr;
