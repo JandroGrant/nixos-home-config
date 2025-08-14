@@ -16,6 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    my-nvf = {
+      url = "github:JandroGrant/nvf";
+    };
+
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
@@ -23,6 +27,7 @@
     nixpkgs,
     home-manager,
     nvf,
+    my-nvf,
     spicetify-nix,
     ...
   } @ inputs: let
@@ -52,7 +57,7 @@
         };
         modules = [
           ./home.nix
-          nvf.homeManagerModules.default
+          # nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.default
         ];
       };

@@ -52,6 +52,7 @@
       cmatrix
       gtypist
       starship
+      inputs.my-nvf.packages.${pkgs.system}.default
 
       # tools
       vlc
@@ -122,10 +123,10 @@
       enable = true;
     };
 
-    nvf = {
-      enable = true;
-      settings = ./nvf;
-    };
+    # nvf = {
+    #   enable = true;
+    #   settings = ./nvf;
+    # };
 
     spicetify = let
       spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
@@ -138,10 +139,6 @@
         hidePodcasts
         skipOrPlayLikedSongs
         fullAlbumDate
-        skipStats
-        songStats
-        betterGenres
-        oldCoverClick
       ];
     };
 
