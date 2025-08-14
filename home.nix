@@ -127,8 +127,22 @@
       settings = ./nvf;
     };
 
-    spicetify = {
+    spicetify = let
+      spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+    in {
       enable = true;
+      theme = spicePkgs.themes.defaultDynamic;
+
+      enabledExtensions = with spicePkgs.extensions; [
+        adblock
+        hidePodcasts
+        skipOrPlayLikedSongs
+        fullAlbumDate
+        skipStats
+        songStats
+        betterGenres
+        oldCoverClick
+      ];
     };
 
     starship = {
