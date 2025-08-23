@@ -37,7 +37,7 @@
       inputs.zen-browser.packages."${system}".default
 
       # gaming
-      discord
+      discord-ptb
       r2modman
       spotify-player
       sameboy
