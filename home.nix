@@ -62,9 +62,6 @@
       # development
       godot
       lua
-      cargo
-      clang
-      go
 
       aseprite
       milkytracker
