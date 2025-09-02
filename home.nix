@@ -60,8 +60,8 @@
       unzip
 
       # development
-      godot
       lua
+      zig
 
       aseprite
       milkytracker
