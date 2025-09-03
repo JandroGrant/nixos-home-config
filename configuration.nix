@@ -90,6 +90,11 @@
       fsType = "auto";
       options = ["defaults" "nofail" "users" "exec"];
     };
+    "/home/jandro/media/sdb" = {
+      device = "/dev/disk/by-uuid/11a385c7-7004-4f22-8839-72bec0dcfeae";
+      fsType = "auto";
+      options = ["defaults" "nofail" "users" "exec"];
+    };
   };
 
   # __
