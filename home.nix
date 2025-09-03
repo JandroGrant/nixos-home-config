@@ -60,6 +60,8 @@
       unzip
 
       # development
+      inputs.zig.packages.${pkgs.system}.default
+
       aseprite
       milkytracker
       furnace

@@ -21,13 +21,15 @@
     };
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
   outputs = {
     nixpkgs,
     home-manager,
-    nvf,
     my-nvf,
+    zig,
     spicetify-nix,
     ...
   } @ inputs: let
@@ -57,7 +59,6 @@
         };
         modules = [
           ./home.nix
-          # nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.default
         ];
       };
