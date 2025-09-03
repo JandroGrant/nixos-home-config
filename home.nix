@@ -60,6 +60,8 @@
       unzip
 
       # development
+      zig
+
       aseprite
       milkytracker
       furnace
