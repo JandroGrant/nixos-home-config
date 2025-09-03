@@ -60,9 +60,6 @@
       unzip
 
       # development
-      lua
-      zig
-
       aseprite
       milkytracker
       furnace
