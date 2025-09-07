@@ -187,11 +187,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1757278289,
-        "narHash": "sha256-P/VI2UTk4vJJLc2OZj9J//7MKCXhtRwZ2pr4+QzAJSw=",
+        "lastModified": 1757278798,
+        "narHash": "sha256-WrL+J2znb8JMeQxDT79RbTAfMqMY6+Zoh6EDplhrqWc=",
         "owner": "JandroGrant",
         "repo": "nvf",
-        "rev": "82ef0902c9cb0bd3fcedf09138f6a0c80cbfa873",
+        "rev": "489191774f284da9f752b5ccb4466e4981195826",
         "type": "github"
       },
       "original": {
