@@ -60,7 +60,7 @@
       unzip
 
       # development
-      inputs.zig.packages.${pkgs.system}.default
+      obsidian
 
       aseprite
       milkytracker
