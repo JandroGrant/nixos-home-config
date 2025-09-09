@@ -60,8 +60,9 @@
       unzip
 
       # development
-      obsidian
+      odin-dev
 
+      obsidian
       aseprite
       milkytracker
       furnace
