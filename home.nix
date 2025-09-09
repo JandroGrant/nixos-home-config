@@ -60,7 +60,7 @@
       unzip
 
       # development
-      odin-dev
+      odin
 
       obsidian
       aseprite
