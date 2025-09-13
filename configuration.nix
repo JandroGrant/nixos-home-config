@@ -133,6 +133,7 @@
     isNormalUser = true;
     extraGroups = ["wheel" "storage"]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
+      flatpak
       pavucontrol
     ];
   };
