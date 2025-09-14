@@ -60,8 +60,6 @@
       unzip
 
       # development
-      go
-
       obsidian
       aseprite
       milkytracker
