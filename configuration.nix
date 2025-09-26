@@ -29,10 +29,6 @@
   services.blueman.enable = true;
   services.udisks2.enable = true;
 
-  services.displayManager.ly = {
-    enable = true;
-  };
-
   services.keyd = {
     enable = true;
     keyboards = {
