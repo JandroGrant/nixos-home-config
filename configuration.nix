@@ -29,6 +29,11 @@
   services.blueman.enable = true;
   services.udisks2.enable = true;
 
+  services.displayManager.ly = {
+    enable = true;
+    x11Support = true;
+  };
+
   services.keyd = {
     enable = true;
     keyboards = {
