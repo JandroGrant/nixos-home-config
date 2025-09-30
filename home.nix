@@ -60,6 +60,7 @@
       unzip
 
       # development
+      godot
       obsidian
       aseprite
       milkytracker
