@@ -66,14 +66,6 @@
     xwayland.enable = true;
   };
 
-  programs.dwl = {
-    enable = true;
-  };
-
-  services.greetd = {
-    enable = true;
-  };
-
   nixpkgs.config.allowUnfree = true;
 
   security.rtkit.enable = true;
@@ -158,6 +150,7 @@
     git
     btop
     gcc
+    dwl
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
