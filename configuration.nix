@@ -66,6 +66,14 @@
     xwayland.enable = true;
   };
 
+  programs.dwl = {
+    enable = true;
+  };
+
+  services.greetd = {
+    enable = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
 
   security.rtkit.enable = true;
