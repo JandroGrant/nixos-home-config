@@ -60,10 +60,18 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
-  programs.hyprland = {
+  # programs.hyprland = {
+  #   enable = true;
+  #   withUWSM = true;
+  #   xwayland.enable = true;
+  # };
+
+  services.xserver = {
     enable = true;
-    withUWSM = true;
-    xwayland.enable = true;
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 35;
+    # NVIDIA SPECIFIC __
+    videoDrivers = ["nvidia"];
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -98,9 +106,6 @@
   };
 
   # __
-
-  # NVIDIA SPECIFIC __
-  services.xserver.videoDrivers = ["nvidia"];
 
   hardware = {
     graphics = {
@@ -150,7 +155,6 @@
     git
     btop
     gcc
-    dwl
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
